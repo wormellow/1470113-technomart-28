@@ -1,0 +1,34 @@
+.header-top {
+  display: flex;
+}
+
+.header-middle {
+  display: flex;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.breadcrumb {
+  display: flex; 
+}
+
+.aside {
+  display: block;
+  width: 200px;
+}
+
+.catalog {
+  display: block;
+}
+
+.sort {
+  display: flex;
+}
