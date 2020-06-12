@@ -32,3 +32,36 @@
 .sort {
   display: flex;
 }
+
+.logo-technomart {
+  background: #ee3643;
+  width: 200px;
+}
+
+.footer-top {
+  display: flex;
+}
+
+.footer-middle {
+  display: flex;
+}
+
+.footer-middle-links {
+  display: flex;
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.socicons {
+  display: flex;
+}
+
+.maincontent {
+  display: flex;
+}
+
+.main-bottom  {
+  display: flex;
+}
