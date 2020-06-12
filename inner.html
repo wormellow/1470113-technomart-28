@@ -41,17 +41,17 @@
 
     </div>
     <div class="header-bottom">
-      <nav> 
-          <ul class="nav">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href=''>Компания</a></li>
-            <li><a href='#'>Каталог</a></li>
-            <li><a href='#'>Новости</a></li>
-            <li><a href='#'>Спецпредложения</a></li>
-            <li><a href='#'>Доставка</a></li>
-            <li><a href='#'>Контакты</a></li>
-          </ul>
-      </nav>  
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href=''>Компания</a></li>
+          <li><a href='#'>Каталог</a></li>
+          <li><a href='#'>Новости</a></li>
+          <li><a href='#'>Спецпредложения</a></li>
+          <li><a href='#'>Доставка</a></li>
+          <li><a href='#'>Контакты</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -68,8 +68,22 @@
       <li><a href='#'>Перфораторы</a></li>
     </ul>
 
+    <h2>Перфораторы</h2>
+    
+    <div class='breadcrumb'>
+    <h4>Фильтр:</h4>
+
+    <ul class="sort">
+      <li>Сортировка:</li>
+      <li>По цене</li>
+      <li>По типу</li>
+      <li>По функционалу</li>
+    </ul>
+   </div>
+
+  <div class="maincontent"> 
     <aside class="aside">
-      <h4>Фильтр:</h4>
+      
       <form action='htpps://echo.htmlacademy.ru'>
         <fieldset>
           <legend>
@@ -137,12 +151,7 @@
 
     </aside>
 
-    <ul class="sort">
-      <li>Сортировка:</li>
-      <li>По цене</li>
-      <li>По типу</li>
-      <li>По функционалу</li>
-    </ul>
+   
 
     <div class="catalog">
       <ul class="catalog-list">
@@ -313,13 +322,27 @@
         </li>
       </ul>
     </div>
+    <div></div>
+   </div>
+    <!--1 2 3 следующая-->
+    <div>
+      <h2>Пара слов о перфораторах</h2>
+      <p>
+        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+        бетоне и камне.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+        шуруповерта и отбойного молотка.
+        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
+        дрель.
+      </p>
+    </div>
   </main>
 
 
   <footer>
     <div>
-      <div>
-        <div><a href='index.html'> <img src="img/logo-technomart.svg" alt=""> </a></div>
+      <div class="footer-top">
+        <div class='logo-technomart'><a href='index.html'> <img src="img/logo-technomart.svg" alt=""> </a></div>
         <nav>
           <ul class="nav">
             <li><a href='#'>Компания</a></li>
@@ -330,10 +353,10 @@
           </ul>
         </nav>
       </div>
-      <div>
+      <div class="footer-middle">
         <p>г.Санкт-Петербург,ул.Б. Конюшенная, д.19/8<br>
           +7(812)555-05-55</p>
-        <ul>
+        <ul class="footer-middle-links">
           <li><a href='#'>Материалы</a></li>
           <li><a href='#'>Техника</a></li>
           <li><a href='#'>Инструмент</a></li>
@@ -343,11 +366,11 @@
     </div>
 
 
-    <div>
+    <div class="footer-bottom">
       <p>©2010-2017 Компания "Техномарт"<br>
         Все права защищены
       </p>
-      <ul>
+      <ul class='socicons'>
         <li><a href='#'> <img src="img/icon-vk.svg" alt=""> </a></li>
         <!--vk-->
         <li><a href='#'> <img src="img/icon-fb.svg" alt=""> </a></li>
