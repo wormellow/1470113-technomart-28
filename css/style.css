@@ -1,8 +1,88 @@
+:root {
+  --basic-background: #f1f5f7;
+  --dark-blue-background: #293449;
+  --blue-background: #32425C;
+  --basic-red: #ee3643;
+  --red-hover: #CA2C37;
+  --red-active: #BA2732;
+}
+
+.container {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  width: 940px;
+}
+
+.btn {
+ background-color: var(--basic-red);
+ color: white;
+ display: inline-block;
+ font-size: 14px;
+ text-decoration: none;
+ line-height: 1;
+ border: 0; 
+ text-transform: uppercase;
+ font-family: Cuprum, Arial, sans-serif;
+ padding: 12px;
+}
+
+.btn:hover,
+.btn:focus {
+ background-color: var(--red-hover);
+}
+
+.btn:active {
+  background-color: var(--red-active);
+}
+
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.846;
+}
+
+h1 {
+  font-family: Cuprum;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  color: #EE3643;
+}
+
+h2 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+
 .header-top {
+  background-color: var(--dark-blue-background);
+}
+
+.header-top-inner {
   display: flex;
 }
 
 .header-middle {
+  background-color: var(--basic-background);
+}
+
+.header-middle-inner {
   display: flex;
 }
 
@@ -11,9 +91,32 @@
   grid-template-columns: auto auto auto;
 }
 
-.nav {
+.catalog-item {
+  border: 1px solid #EAEAEA;
+}
+
+.header-nav {
+  background-color: var(--basic-background);
+}
+
+.header-nav-inner {
+  background-color: var(--dark-blue-background);
+}
+
+.header-nav-list {
   display: flex;
   justify-content: space-around;
+ 
+}
+
+.header-nav-item {
+  font-family: Cuprum;
+  color: #ffffff;
+}
+
+.header-nav-link {
+  font-family: Cuprum;
+  color: #ffffff;
 }
 
 .breadcrumb {
@@ -39,10 +142,18 @@
 }
 
 .footer-top {
+  background-color: var(--blue-background);
+}
+
+.footer-top-inner {
   display: flex;
 }
 
 .footer-middle {
+  background-color: var(--blue-background);
+}
+
+.footer-middle-inner {
   display: flex;
 }
 
@@ -51,10 +162,18 @@
 }
 
 .footer-bottom {
+  background-color: var(--dark-blue-background);
+}
+
+.footer-bottom-inner {
   display: flex;
 }
 
 .socicons {
+  display: flex;
+}
+
+.about {
   display: flex;
 }
 
@@ -66,13 +185,12 @@
   display: flex;
 }
 
-h2 {
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
 
+
+.header-bottom {
+
+
+background: #32425C;
+box-shadow: inset 0px -5px 0px #293449;
+}
 
