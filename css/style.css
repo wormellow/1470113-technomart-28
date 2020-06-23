@@ -88,7 +88,8 @@ ul {
 
 .catalog-list {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 220px 220px 220px;
+  gap: 20px;
 }
 
 .catalog-item {
