@@ -172,6 +172,7 @@ ul {
 
 .socicons {
   display: flex;
+  
 }
 
 .about {
@@ -195,3 +196,78 @@ background: #32425C;
 box-shadow: inset 0px -5px 0px #293449;
 }
 
+.goods-title {
+  display: flex;
+  align-items: center;
+  background: #F9F5F0;
+}
+
+.goods-list {
+  display: flex;
+}
+
+.goods-item {
+  border: 1px solid #EAEAEA;
+}
+
+.producers-title {
+  display: flex;
+  align-items: center;
+  background: #F9F5F0;
+}
+
+.producer {
+  box-sizing: border-box;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  height: 140px;
+  margin-top: 18px;
+}
+
+.producers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features-item-material {
+  background: #FFBF47;
+  width: 300px;
+  height: 123px;
+  display: block;
+}
+
+.features-item-tool {
+  background: #3BBCE3;
+  width: 300px;
+  height: 123px;
+}
+
+.features-item-tech {
+  background: #DC91D8;
+  width: 300px;
+  height: 123px;
+}
+
+.features-item-sell {
+  background: #8ED78F;
+  width: 300px;
+  height: 123px;
+}
+
+.features-item-delivery {
+  background: #FFC047;
+  width: 300px;
+  height: 123px;
+}
+
+.services {
+  display: block;
+  background: #F1F5F7;
+}
