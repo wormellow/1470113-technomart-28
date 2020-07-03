@@ -7,6 +7,73 @@
   --red-active: #BA2732;
 }
 
+/* pt-sans-regular - latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt-sans-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v11-latin-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+/* pt-sans-700 - latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/pt-sans-v11-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('../fonts/pt-sans-v11-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v11-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v11-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v11-latin-700.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+
+/* cuprum-regular - latin */
+@font-face {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cuprum-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Cuprum Regular'), local('Cuprum-Regular'),
+       url('../fonts/cuprum-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cuprum-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cuprum-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cuprum-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cuprum-v11-latin-regular.svg#Cuprum') format('svg'); /* Legacy iOS */
+}
+/* cuprum-700 - latin */
+@font-face {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/cuprum-v11-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Cuprum Bold'), local('Cuprum-Bold'),
+       url('../fonts/cuprum-v11-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cuprum-v11-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cuprum-v11-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cuprum-v11-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cuprum-v11-latin-700.svg#Cuprum') format('svg'); /* Legacy iOS */
+}
+/* cuprum-italic - latin */
+@font-face {
+  font-family: Cuprum;
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/cuprum-v11-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Cuprum Italic'), local('Cuprum-Italic'),
+       url('../fonts/cuprum-v11-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cuprum-v11-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cuprum-v11-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cuprum-v11-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cuprum-v11-latin-italic.svg#Cuprum') format('svg'); /* Legacy iOS */
+}
+
 .container {
   box-sizing: border-box;
   padding-left: 20px;
@@ -231,40 +298,39 @@ box-shadow: inset 0px -5px 0px #293449;
 }
 
 .features-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  
+  display: grid;
+  grid-template-columns: 300px 300px 300px ;
+  gap: 20px;
+}
+
+.features-item {
+
 }
 
 .features-item-material {
   background: #FFBF47;
-  width: 300px;
-  height: 123px;
-  display: block;
+  
 }
 
 .features-item-tool {
   background: #3BBCE3;
-  width: 300px;
-  height: 123px;
+  
 }
 
 .features-item-tech {
   background: #DC91D8;
-  width: 300px;
-  height: 123px;
+  
 }
 
 .features-item-sell {
   background: #8ED78F;
-  width: 300px;
-  height: 123px;
+  
 }
 
 .features-item-delivery {
   background: #FFC047;
-  width: 300px;
-  height: 123px;
+  
 }
 
 .services {
