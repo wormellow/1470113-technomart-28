@@ -5,23 +5,27 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link rel='stylesheet' href='css/style.css'>
-  
+
 </head>
 
 <body>
   <header>
     <div class="header-top">
       <div class="header-top-inner container">
-        <a href=''> <img src="img/logo-technomart.svg" alt="">Техномарт</a>
-        <form action='https://echo.htmlacademy.ru' method='get'>
-          <button><img src='img/icon-search.svg' alt=''></button>
-          <input type='search' name='search' id='search' placeholder='Поиск'>
+        <a href='#' class="header-top-logo logo"> <img src="img/logo-technomart.svg" alt="Техномарт"></a>
+        <form action='https://echo.htmlacademy.ru' method='get' class="header-top-search">
+          <input type='search' name='search' placeholder='Поиск:' class="header-top-search-input">
+          <button type='submit' class="header-top-search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="17"
+              height="17" viewBox="0 0 17 17">
+              <path
+                d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+            </svg>
+          </button>
         </form>
-        <img src='img/icon-bookmark.svg' alt=''>
-        <button>Закладки</button>
-        <img src='img/Shape.svg' alt=''>
-        <button>Корзина</button>
-        <button>Оформить заказ</button>
+
+        <a href='#' class="header-top-btn header-top-btn-bookmarks">Закладки</a>
+        <a href="#" class="header-top-btn header-top-btn-cart">Корзина</a>
+        <a href="#" class="header-top-btn header-top-btn-order">Оформить заказ</a>
       </div>
     </div>
 
@@ -29,18 +33,19 @@
       <div class="header-middle-inner container">
         <h1>
           Интернет-магазин
-          строительных материалов
+          строительных материалов <br>
           и инструментов для ремонта
         </h1>
-
-        <img src='img/icon-phone.svg' alt=''>
-        <a href='tel:+7(812)555-05-55'>+7(812)555-05-55</a>
-        <p>г.Санкт-Петербург,ул.Б. Конюшенная, д.19/8</p>
-
-        <div>
-          <img src='img/icon-login.svg' alt=''>
-          <a href='#'>Войти</a>
-          <a href='#'>Регистрация</a>
+        <div class="header-middle-contacts">
+          <div class="header-middle-number">
+            <img src='img/icon-phone.svg' alt=''>
+            <a href='tel:+7(812)555-05-55'>+7(812)555-05-55</a>
+          </div>
+          <p>г.Санкт-Петербург,ул.Б. Конюшенная, д.19/8</p>
+        </div>
+        <div class="header-middle-buttons">
+          <a class="login" href='#'>Войти</a>
+          <a class="signup" href='#'>Регистрация</a>
         </div>
       </div>
     </div>
@@ -49,8 +54,8 @@
       <nav class="header-nav-inner container">
         <ul class="header-nav-list">
           <li class="header-nav-item"><a href="index.html" class="header-nav-link">Главная</a></li>
-          <li class="header-nav-item"><a href='#' class="header-nav-link">Компания</a></li>
-          <li class="header-nav-item"><a href='#' class="header-nav-link">Каталог</a></li>
+          <li class="header-nav-item"><a href='' class="header-nav-link">Компания</a></li>
+          <li class="header-nav-item"><a href='inner.html' class="header-nav-link">Каталог</a></li>
           <li class="header-nav-item"><a href='#' class="header-nav-link">Новости</a></li>
           <li class="header-nav-item"><a href='#' class="header-nav-link">Спецпредложения</a></li>
           <li class="header-nav-item"><a href='#' class="header-nav-link">Доставка</a></li>
@@ -62,15 +67,11 @@
 
 
   <main>
-    <ul class='breadcrumb container'>
-      <li><a href='index.html'></a></li>
-      <!--значок в виде домика, ведущий на главную страницу-->
-
-      <li><a href='#'>Каталог</a></li>
-
-      <li><a href='#'>Инструмент</a></li>
-
-      <li><a href='#'>Перфораторы</a></li>
+    <ul class='breadcrumbs container'>
+      <li><a class="breadcrumbs-item icon-home" href='index.html'></a></li>
+      <li><a class="breadcrumbs-item" href='inner.html'>Каталог</a></li>
+      <li><a class="breadcrumbs-item" href='#'>Инструмент</a></li>
+      <li><span class="breadcrumbs-item">Перфораторы</span></li>
     </ul>
 
     <h2 class="page-title container">Перфораторы</h2>
@@ -78,71 +79,71 @@
     <div class="maincontent container">
       <aside class="aside">
         <div class="filter">
-        <h4 class="filter-title">Фильтр:</h4>
-        <form action='htpps://echo.htmlacademy.ru' class="filter-form">
-          <fieldset class="filter-fieldset">
-            <legend class="filter-legend">
-              Цена:
-            </legend>
-            <div>
-              <!--серый фон-->
+          <h4 class="filter-title">Фильтр:</h4>
+          <form action='htpps://echo.htmlacademy.ru' class="filter-form">
+            <fieldset class="filter-fieldset">
+              <legend class="filter-legend">
+                Цена:
+              </legend>
               <div>
-                <!--серая полоска-->
+                <!--серый фон-->
                 <div>
-                  <!--заленая полоска-->
-                  <div></div>
-                  <!--левый ползунок-->
-                  <div></div>
-                  <!--правый ползунок-->
+                  <!--серая полоска-->
+                  <div>
+                    <!--заленая полоска-->
+                    <div></div>
+                    <!--левый ползунок-->
+                    <div></div>
+                    <!--правый ползунок-->
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <input type='number'>—<input type='number'>
-            </div>
-          </fieldset>
+              <div>
+                <input type='number'>—<input type='number'>
+              </div>
+            </fieldset>
 
-          <fieldset class="filter-fieldset">
-            <legend class="filter-legend">Производители:</legend>
-            <ul class="filter-list">
-              <li class="filter-item">
-                <input type='checkbox' id='Bosch' class="filter-input-check visually hidden">
-                <label for='Bosch' class="filter-label-check">Bosch</label>
-              </li>
-              <li>
-                <input type='checkbox' id="Interskol">
-                <label for='Interskol'>Интерскол</label>
-              </li>
-              <li>
-                <input type='checkbox' id='makita'>
-                <label for='makita'>makita</label>
-              </li>
-              <li>
-                <input type='checkbox' id="dewalt">
-                <label for='dewalt'>dewalt</label>
-              </li>
-              <li>
-                <input type='checkbox' id="hitachi">
-                <label for='hitachi'>hitachi</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Питание:</legend>
-            <ul>
-              <li>
-                <input type='radio' id="accum" class="filter-input-radio">
-                <label class="filter-label-radio" for='accum'>Аккумуляторные</label>
-              </li>
-              <input type='radio' id="wire">
-              <label for='wire'>Сетевые</label>
-            </ul>
-          </fieldset>
-          <form action='#'>
-            <button><a href='htpps://echo.htmlacademy.ru'>показать</a></button>
+            <fieldset class="filter-fieldset">
+              <legend class="filter-legend">Производители:</legend>
+              <ul class="filter-list">
+                <li class="filter-item">
+                  <input type='checkbox' id='Bosch' class="filter-input-check visually hidden">
+                  <label for='Bosch' class="filter-label-check">Bosch</label>
+                </li>
+                <li>
+                  <input type='checkbox' id="Interskol">
+                  <label for='Interskol'>Интерскол</label>
+                </li>
+                <li>
+                  <input type='checkbox' id='makita'>
+                  <label for='makita'>makita</label>
+                </li>
+                <li>
+                  <input type='checkbox' id="dewalt">
+                  <label for='dewalt'>dewalt</label>
+                </li>
+                <li>
+                  <input type='checkbox' id="hitachi">
+                  <label for='hitachi'>hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Питание:</legend>
+              <ul>
+                <li>
+                  <input type='radio' id="accum" class="filter-input-radio">
+                  <label class="filter-label-radio" for='accum'>Аккумуляторные</label>
+                </li>
+                <input type='radio' id="wire">
+                <label for='wire'>Сетевые</label>
+              </ul>
+            </fieldset>
+            <form action='#'>
+              <button><a href='htpps://echo.htmlacademy.ru'>показать</a></button>
+            </form>
           </form>
-        </form>
-      </div>
+        </div>
 
 
       </aside>
@@ -151,11 +152,15 @@
       <div class="center">
         <div class="sort">
           <h4 class="sort-title">Сортировка:</h4>
-          <ul class="sort-list">
-            <li class="sort-item">По цене</li>
-            <li>По типу</li>
-            <li>По функционалу</li>
-          </ul>
+          <div class="sort-direction">
+            <a class="sort-dir icon-up-dir sort-dir-active" href="#">Вверх</a>
+            <a class="sort-dir icon-down-dir" href="#">Вниз</a>
+          </div>
+          <div class="sort-list">
+            <a href="#" class="sort-item sort-item-active">По цене</a>
+            <a href="#" class="sort-item">По типу</a>
+            <a href="#" class="sort-item">По функционалу</a>
+          </div>
         </div>
         <div class="catalog">
           <ul class="catalog-list">
@@ -326,12 +331,17 @@
             </li>
           </ul>
         </div>
-        <!--1 2 3 следующая-->
+        <div class="catalog-paginator">
+          <span class="paginator-link paginator-link-current" href="#">1</span>
+          <a class="paginator-link" href="#">2</a>
+          <a class="paginator-link" href="#">3</a>
+          <a class="paginator-link catalog-btn" href="#">Следующая</a>
+        </div>
       </div>
     </div>
 
-    <div>
-      <h2 class="drill-desc container">Пара слов о перфораторах</h2>
+    <div class="drill-desc container">
+      <h2>Пара слов о перфораторах</h2>
       <p>
         Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
         бетоне и камне.
@@ -375,21 +385,27 @@
 
     <div class="footer-bottom">
       <div class="footer-bottom-inner container">
-        <p>©2010-2017 Компания "Техномарт"<br>
-          Все права защищены
-        </p>
+        <div class="footer-bottom-copyright">
+          <p>©2010-2019 Компания "Техномарт"<br>
+            Все права защищены
+          </p>
+        </div>
         <ul class='socicons'>
-          <li><a href='#'> <img src="img/icon-vk.svg" alt=""> </a></li>
+          <li><a class="vk" href='#'> <img src="img/icon-vk.svg" alt=""> </a></li>
           <!--vk-->
-          <li><a href='#'> <img src="img/icon-fb.svg" alt=""> </a></li>
+          <li><a class="fb" href='#'> <img src="img/icon-fb.svg" alt=""> </a></li>
           <!--facebook-->
-          <li><a href='#'> <img src="img/icon-insta.svg" alt=""> </a></li>
+          <li><a class="ig" href='#'> <img src="img/icon-insta.svg" alt=""> </a></li>
           <!--instagram-->
         </ul>
-        <p>Обратная связь:</p>
-        <a href='mail@htmlacademy.ru'>mail@htmlacademy.ru</a>
-        <p>Разработано — </p>
-        <a href='htmlacademy.ru'>htmlacademy.ru</a>
+        <div class="feedback">
+          <p>Обратная связь:</p>
+          <a href='mail@htmlacademy.ru'>mail@htmlacademy.ru</a>
+        </div>
+        <div class="developer">
+          <p>Разработано — </p>
+          <a href='htmlacademy.ru'>htmlacademy.ru</a>
+        </div>
       </div>
     </div>
   </footer>
