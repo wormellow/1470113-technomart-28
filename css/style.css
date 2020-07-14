@@ -755,11 +755,11 @@ ul {
 }
 
 .icon-up-dir::before {
- content: url(../img/icon-up-dir.svg);
+ content: "";
 }
 
 .icon-down-dir:before {
-  content: url(../img/icon-down-dir.svg);
+  content: "";
 }
 
 .icon-up-dir:before,
